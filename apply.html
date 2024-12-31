@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Ved Infotech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="service1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="apply.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#" class="logonav">
+                    <img src="assets\logo.jpg" alt="Logo">
+                </a>
+                <span><b>Your Vision, Our Innovation</b></span>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span>&#9776;</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="expertise.html" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-items">
+                        <a href="web.html">Web Development</a>
+                        <a href="mobile.html">Mobile Development</a>
+                        <a href="dm.html">Digital Marketing</a>
+                        <a href="ecommerce.html">E-Commerce</a>
+                        <a href="appmaintenance.html">App Maintenance</a>
+                        <a href="softwaredev.html">Software Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="industries.html" class="dropdown-toggle">Industries</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-items">
+                        <a href="banking.html">Banking and Services</a>
+                        <a href="insurance.html">Insurance</a>
+                        <a href="health.html">Health Care</a>
+                        <a href="tel.html">Telecom and Media</a>
+                        <a href="software.html">Sotware and Hi-Tech Media</a>
+                        <a href="education.html">Education</a>
+                    </div>
+                    </div> 
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="technologies.html">Technologies</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="apply-section">
+            <h1>Apply for a Position</h1>
+            <p>Fill out the form below to apply for your desired role at Spark Ved Infotech. We look forward to reviewing your application!</p>
+            
+            <form action="submit_application.php" method="post" class="apply-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                
+                <label for="position">Position Applying For:</label>
+                <select id="position" name="position" required>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Mobile Developer">Mobile Developer</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                </select>
+                
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us why you're a great fit!"></textarea>
+                
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
+        </section>
+    </main>
+ <!-- Footer -->
+ <footer>
+    <div class="footer-top">
+     <!-- Logo and Tagline -->
+     <div class="footer-logo">
+         <img src="assets\logo.jpg" alt="Logo" class="footer-logo-img">
+         <p class="footer-tagline"><b>Your Vision , Our Innovation</b></p>
+     </div>
+ 
+     <!-- Footer Main Content -->
+     <div class="container">
+         <!-- First Row: Downloads, Services, Products, Get in Touch -->
+         <div class="footer-column">
+          <h3>Technologies</h3>
+          <ul>
+              <li><a href="#">AngularJS Development</a></li>
+              <li><a href="#">ReactJs Development</a></li>
+              <li><a href="#">PHP Development</a></li>
+              <li><a href="#">Java Development</a></li>
+              <li><a href="#">Python Development</a></li>
+              <li><a href="#">Shopify Development</a></li>
+              <li><a href="#">WordPress Development</a></li>
+              <li><a href="#">VueJsDevelopment</a></li>
+              <li><a href="#">MongoDB Development</a></li>
+              <li><a href="#">NodeJs Development</a></li>
+          </ul>
+      </div>
+
+         <div class="footer-column">
+             <h3>Our Service</h3>
+             <ul>
+                 <li><a href="#">Web DevelopmentS</a></li>
+                 <li><a href="#">Mobile Development</a></li>
+                 <li><a href="#">Digital Marketing</a></li>
+                 <li><a href="#">E-commerence</a></li>
+                 <li><a href="#">App Maintaince</a></li>
+                 <li><a href="#">Software Development</a></li>
+             </ul>
+         </div>
+ 
+         <div class="footer-column">
+             <h3>Industires</h3>
+             <ul>
+                 <li><a href="#">Banking and Finance</a></li>
+                 <li><a href="#">Education</a></li>
+                 <li><a href="#">Insurance</a></li>
+                 <li><a href="#">HealthCare</a></li>
+                 <li><a href="#">Telecome and Media</a></li>
+                 <li><a href="#">Software and Hi-Tech</a></li>
+             </ul>
+         </div>
+ 
+         <div class="footer-column footer-contact">
+             <h3>Get in Touch</h3>
+             <div class="social-icons">
+                 <a href="#facebook"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                 <a href="#twitter"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                 <a href="#linkedin"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+             </div>
+             <div class="footer-subscribe">
+                 <form>
+                     <input type="email" placeholder="Enter email address" required>
+                     <button type="submit">Subscribe</button>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div> 
+ 
+     <!-- Second Row: Subscribe Form -->
+     <div class="bottom-footer">
+     <!-- Footer Bottom (Copyright) -->
+     <div class="footer-bottom">
+         <p>&copy; 2024 Spark Ved Infotech. All Rights Reserved.</p>
+     </div>
+ </div>
+ </footer>
+    <script src="script.js"></script>
+</body>
+</html>

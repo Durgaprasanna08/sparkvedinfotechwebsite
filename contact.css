@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    background: url('assets/contact.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box;
+    height: 100%; /* Ensure the body covers the entire height */
+}
+
+/* Main Container */
+main {
+    padding-top: 70px; /* Adjust this to match your navbar height */
+}
+
+/* Contact Header Section */
+.contact-header {
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #cacdcf;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    background: #f1f1f1;
+}
+
+.contact-form .btn-submit {
+    background-color: #1a70b6;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #ffffff;
+}
+
+/* Company Address Section */
+.company-address {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.company-address h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.company-address p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.company-address ul {
+    list-style: none;
+    padding: 0;
+}
+
+.company-address ul li {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Response Time Section */
+.response-time {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.response-time h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.response-time p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .company-address h2 {
+        font-size: 1.8rem;
+    }
+
+    .company-address p,
+    .company-address ul li {
+        font-size: 1rem;
+    }
+
+    .response-time h2 {
+        font-size: 1.5rem;
+    }
+
+    .response-time p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-header p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form h2 {
+        font-size: 1.2rem;
+    }
+
+    .company-address h2 {
+        font-size: 1.5rem;
+    }
+
+    .response-time h2 {
+        font-size: 1.2rem;
+    }
+}

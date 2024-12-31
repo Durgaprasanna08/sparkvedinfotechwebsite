@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Main Section Styling */
+main {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7; /* Fallback color */
+}
+
+/* About Us Section */
+.about-us {
+    width: 100%;
+    height: 100%; /* Full height */
+    background-image: url('assets/aboutbg.jpg'); /* Path to the background image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* About Container */
+.about-container {
+    max-width: 800px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.about-us h1 {
+    font-size:50px;
+    font-style: bold;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph */
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .about-container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-us h1 {
+        font-size: 1.6rem;
+    }
+
+    .about-us p {
+        font-size: 0.9rem;
+    }
+
+    .about-container {
+        padding: 15px;
+    }
+}
+/* Basic styling for the section */
+#join-spark {
+    position: relative;
+    padding: 60px 20px;
+    color:white;
+    text-align: center;
+    background-image: url('assets/joinus.png');  /* Background image */
+    background-size: cover;  /* Ensure it covers the entire section */
+    background-position: center;  /* Center the image */
+    background-attachment:absoulte;  /* Make it fixed during scrolling */
+}
+
+/* Container for content */
+.join-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark overlay to make text readable */
+    border-radius: 10px;
+}
+
+/* Heading styles */
+#join-spark h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph styles */
+#join-spark p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button styling */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #48C0E0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;  /* Change color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #join-spark {
+        padding: 40px 20px;
+    }
+
+    #join-spark h2 {
+        font-size: 2rem;
+    }
+
+    #join-spark p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #join-spark h2 {
+        font-size: 1.5rem;
+    }
+
+    #join-spark p {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    height:100%;
+    width:100%;
+}
+main{
+    width:100%;
+    padding-top:100px; /* Ensure content starts below the navbar */
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #22a1dbb0;
+    z-index: 1000;
+    color: white;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    height: auto; /* Adapt height based on content */
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s; /* Interaction effect */
+}
+
+.service:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.service-image {
+    flex: 1; /* Ensure equal distribution in the flex container */
+    background-color: #282626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fit nicely */
+    transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.service-image:hover img {
+    transform: scale(1.1); /* Zoom image slightly on hover */
+}
+
+.service-text {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #0f0451;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-text h1, .service-text h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.service-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}

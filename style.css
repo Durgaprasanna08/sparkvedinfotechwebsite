@@ -739,16 +739,16 @@ body {
 }
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
-    .Service-card {
+    .Services{
         flex: 1 1 calc(50% - 40px); /* 2 cards per row for medium screens */
         max-width: calc(50% - 40px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .Service-card {
-        flex: 1 1 calc(100% - 40px); /* 1 card per row for small screens */
-        max-width: calc(100% - 40px);
+    .Services{
+        flex: 1 1 calc(50% - 40px); /* 1 card per row for small screens */
+        max-width: calc(50% - 40px);
     }
 }
 
@@ -758,7 +758,7 @@ body {
     }
 
     .Service-card .content {
-        padding: 10px;
+        padding:30px;
     }
 
     .Service-card h2 {
@@ -766,7 +766,7 @@ body {
     }
 
     .Service-card .btn-secondary {
-        padding: 8px 15px;
+        padding: 10px 15px;
         font-size: 0.9rem;
     }
 }

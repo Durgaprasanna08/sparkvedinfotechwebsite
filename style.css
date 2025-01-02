@@ -194,84 +194,6 @@ body {
         max-height: 200px;
     }
 }
-/*Service-section*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.Services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
-    padding: 20px;
-    background-color: white;
-}
-
-.Service-card {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    height: 30vw;
-}
-
-.Service-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.Service-card .content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.Service-card .content img {
-    max-width: 80%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: opacity 0.3s;
-}
-
-.Service-card:hover img {
-    opacity: 0.9;
-}
-
-@media (max-width: 768px) {
-    .Services {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .Service-card .content h2 {
-        font-size: 1.2rem;
-    }
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.btn-secondary{
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #31323282; /* Adjust primary color */
-    border-radius: 5px;
-    color: white;
-    width:150px;
-    margin-top: 10px;
-}
 /* Cards Container */
 .industires-container {
     display: flex;
@@ -343,6 +265,7 @@ body {
         font-size: 1rem; /* Adjust paragraph text size for smaller screens */
     }
 }
+*/
 /* General Styling */
 #technologies {
     padding: 50px 20px;
@@ -737,36 +660,81 @@ body {
         margin: 0 auto;
     }
 }
-/* Responsive Styles */
-@media screen and (max-width: 1024px) {
-    .Services{
-        flex: 1 1 calc(50% - 40px); /* 2 cards per row for medium screens */
-        max-width: calc(50% - 40px);
-    }
+/* Section Styling */
+.Services {
+    display: grid;
+    padding:30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-@media screen and (max-width: 768px) {
-    .Services{
-        flex: 1 1 calc(50% - 40px); /* 1 card per row for small screens */
-        max-width: calc(50% - 40px);
-    }
+/* Service Card Styling */
+.Service-card {
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (max-width: 480px) {
+.Service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Styling */
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* Button Styling */
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
     }
 
-    .Service-card .content {
-        padding:30px;
-    }
-
-    .Service-card h2 {
+    .content h2 {
         font-size: 1.2rem;
     }
 
-    .Service-card .btn-secondary {
-        padding: 10px 15px;
+    .Service-card {
+        padding: 10px;
+    }
+
+    .btn-secondary {
         font-size: 0.9rem;
+        padding: 8px 15px;
     }
 }
